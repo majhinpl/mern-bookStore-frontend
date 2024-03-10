@@ -17,13 +17,14 @@ const Hero = () => {
                     modi blanditiis dolores quasi eaque explicabo!
                 </p>
                 <div className="flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0 mt-2 mb-3">
-
+                <Link to={"/book"}>
                 <button
                     type="button"
                     className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black hover:opacity-[0.4]"
                 >
-                    <Link to={"/book"}>View All Books</Link>
+                    View All Books
                 </button>
+                </Link>
                 
                 </div>
 

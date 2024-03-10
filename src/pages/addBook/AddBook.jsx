@@ -22,7 +22,7 @@ const AddBook = () => {
 //   formData.append('publishedAt',publishedAt)
 //   formData.append('image',image)
 //   formData.append('publication',publication)
-//    const response = await axios.post('https://mern-book-store-frontend-gamma.vercel.app/book',formData)
+//    const response = await axios.post('https://mern-bookstore-backend-rf03.onrender.com/book',formData)
 //  }
 const navigate = useNavigate()
 const [data,setData] = useState({
@@ -53,7 +53,7 @@ const handleSubmit = async (e)=>{
   })
   formData.append('image',image)
 
-  const response = await axios.post("https://mern-book-store-frontend-gamma.vercel.app/book",formData)
+  const response = await axios.post("https://mern-bookstore-backend-rf03.onrender.com/book",formData)
   if(response.status === 201){
     navigate("/")
   }else{

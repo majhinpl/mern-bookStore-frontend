@@ -7,7 +7,7 @@ import axios from 'axios'
 const Books = () => {
     const [books,setBooks] = useState([])
     const fetchBooks = async()=>{
-    const response =  await axios.get('https://mern-book-store-frontend-gamma.vercel.app/book')
+    const response =  await axios.get('https://mern-bookstore-backend-rf03.onrender.com/book')
     if(response.status === 200){
         setBooks(response.data.data)        
     }

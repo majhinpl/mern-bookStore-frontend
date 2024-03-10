@@ -10,7 +10,7 @@ const SingleBook = () => {
     const [book, setBook] = useState({});
 
     const fetchBook = async () => {
-        const response = await axios.get(`https://mern-book-store-frontend-gamma.vercel.app//book/${id}`);
+        const response = await axios.get(`https://mern-bookstore-backend-rf03.onrender.com/book/${id}`);
         console.log(response)
         if (response.status === 200) {
             setBook(response.data.data)
@@ -24,7 +24,7 @@ const SingleBook = () => {
     console.log(setBook)
 
     const deleteBook = async() => {
-        const response = await axios.delete(`https://mern-book-store-frontend-gamma.vercel.app//book/${id}`)
+        const response = await axios.delete(`https://mern-bookstore-backend-rf03.onrender.com/book/${id}`)
 
         if (response.status === 200) {
             navigate("/book");

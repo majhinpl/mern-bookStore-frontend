@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import Navbar from '../../components/Navbar'
-import Card from '../../components/Card'
-import axios from 'axios'
+import React, { useEffect, useState } from 'react';
+import Navbar from '../../components/Navbar';
+import Card from '../../components/Card';
+import axios from 'axios';
 
 
 const Books = () => {
@@ -25,7 +25,7 @@ const Books = () => {
             {
                 books.length > 0 && books.map((book)=>{
                 return (
-                    <Card book={book}/>
+                    <Card book={book} />
                 )
                 })
             }
